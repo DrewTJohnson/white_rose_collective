@@ -1,0 +1,47 @@
+/* ------------------------------------------------------------ *\
+    Vendor
+\* ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------ *\
+    Settings
+\* ------------------------------------------------------------ */
+
+@import './_variables.scss';
+
+/* ------------------------------------------------------------ *\
+    Theme
+\* ------------------------------------------------------------ */
+
+html, body {
+    font-family: $font-family-sans-serif;
+}
+body {
+    margin: 0;
+
+    .main-nav {
+        background: lightblue;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 75px;
+        padding: 0 1em;
+        max-width: 1600px;
+
+        h1 {
+            margin: 0;
+        }
+        #menu-main-navigation {
+            list-style: none;
+            li a {
+                text-decoration: none;
+                color: white;
+                font-weight: bolder;
+            }
+        }
+    }
+    .pg-wrap {
+        margin: 1em;
+        max-width: 1600px;
+    }
+}

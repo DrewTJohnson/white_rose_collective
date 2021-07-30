@@ -1,0 +1,37 @@
+/* ------------------------------------------------------------ *\
+    Vendor
+\* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ *\
+    Settings
+\* ------------------------------------------------------------ */
+/* ------------------------------------------------------------ *\
+    Theme
+\* ------------------------------------------------------------ */
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+body .main-nav {
+  background: lightblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 1em;
+  max-width: 1600px;
+}
+body .main-nav h1 {
+  margin: 0;
+}
+body .main-nav #menu-main-navigation {
+  list-style: none;
+}
+body .main-nav #menu-main-navigation li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+
+/*# sourceMappingURL=index.css.map */
