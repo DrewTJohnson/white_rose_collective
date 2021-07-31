@@ -22,10 +22,12 @@
 	<body <?php body_class(); ?>>
 		<?php daisy_bootstrap_shim_wp_body_open(); ?>
 
-		<div class="main-nav">
-			<?php \DaisyBootstrap::render( 'views/partials/logo' ); ?>
-			<nav>
-				<?php \DaisyBootstrap::render( 'views/partials/top-navigation' ); ?>
-			</nav>
+		<div class="nav-container">
+			<div class="main-nav">
+				<?php \DaisyBootstrap::render( 'views/partials/logo' ); ?>
+				<nav>
+					<?php \DaisyBootstrap::render( 'views/partials/top-navigation' ); ?>
+				</nav>
+			</div>
 		</div>
 		

@@ -12,6 +12,9 @@
  */
 
 //  Establishes navigation menus for theme
+
+require 'views/partials/customizer.php';
+
 function register_daisy_bootstrap_menus() {
 	register_nav_menus( 
 		array(

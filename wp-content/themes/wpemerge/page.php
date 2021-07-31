@@ -9,11 +9,18 @@
  * @package DaisyBootstrap
  */
 
+	$bgImage = get_the_post_thumbnail_url();
+
 ?>	
 
 <?php if ( is_front_page() ) : ?>
+	<div class="home-hero">
+		<div class="title-wrap">
+			<?php daisy_bootstrap_the_title( '<h1 class="homepage-title">', '</h1>'); ?>
+			<div class="homepage-border"></div>
+		</div>
+	</div>
 	<div class="pg-wrap">
-		<?php daisy_bootstrap_the_title( '<h1 class="homepage-title">', '</h1>'); ?>
 		<div class="pg-body">
 			<?php the_content(); ?>
 		</div>
