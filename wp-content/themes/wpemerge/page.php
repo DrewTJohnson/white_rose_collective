@@ -10,6 +10,7 @@
  */
 
 	$bgImage = get_the_post_thumbnail_url();
+	$toContent = get_field('proceed_to_content');
 
 ?>	
 
@@ -19,8 +20,15 @@
 			<?php daisy_bootstrap_the_title( '<h1 class="homepage-title">', '</h1>'); ?>
 			<div class="homepage-border"></div>
 		</div>
+		<?php if($toContent) : ?>
+			<div class="proceed-to-content">
+				<a class="down-arrow" href="#content">
+					Test
+				</a>
+			</div>
+		<?php endif; ?>
 	</div>
-	<div class="pg-wrap">
+	<div class="pg-wrap" <?php if ($toContent) :?> id="content" <?php endif; ?>>
 		<div class="pg-body">
 			<?php the_content(); ?>
 		</div>

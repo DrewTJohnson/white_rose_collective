@@ -40,8 +40,11 @@ body {
                 display: flex;
                 flex-direction: row;
                 li {
-                    padding: 0 1em;
+                    padding-right: 1em;
 
+                    &:last-child {
+                        padding-right: 0;
+                    }
                     a {
                         font-size: 1.5rem;
                         text-decoration: none;
@@ -99,45 +102,54 @@ body {
     }
     .ftr {
         width: 100%;
-        height: 100px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        background: $color-primary;
-        margin-top: 2rem;
-        padding: 2rem 0;
+        height: 100%;
 
-        .ftr-wrap {
-            max-width: 1400px;
-            width: 100%;
-            margin: 0 auto;
-            padding: 0 1.5rem;
+            .ftr-wrap {
+                height: 100%;
 
-            ul {
-                display: flex;
-                flex-direction: column;
-                list-style: none;
-                padding: 0;
-
-                li {
-                    a {
-                        font-size: 1.25rem;
-                        text-decoration: none;
-                        color: $color-white;
-                         &:hover {
-                             text-decoration: underline;
-                         }
+                .ftr-nav {
+                    height: 100%;
+                    width: 100%;
+                    background: $color-black;
+                    .wrap {
+                        max-width: 1400px;
+                        padding: 2em;
+                        margin: 0 auto;
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            list-style: none;
+                            padding: 0;
+        
+                            li {
+                                a {
+                                    font-size: 1.25rem;
+                                    text-decoration: none;
+                                    color: $color-white;
+                                     &:hover {
+                                         text-decoration: underline;
+                                     }
+                                }
+                            }
+                        }
                     }
                 }
-            }
-            .copyright {
-                text-align: right;
-                p {
-                    color: $color-white;
-                    margin: 0;
+                .copyright-wrap {
+                    width: 100%;
+                    background: $color-primary;
+                    .wrap {
+                        max-width: 1400px;
+                        padding: 2em;
+                        margin: 0 auto;
+                        .copyright {
+                            text-align: right;
+                            p {
+                                color: $color-white;
+                                margin: 0;
+                            }
+                        }
+                    }
                 }
-            }
+            }   
         }
     }
-}
